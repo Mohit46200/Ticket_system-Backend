@@ -14,7 +14,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://ticket-system-indol-theta.vercel.app"
+      "https://ticket-system-indol-theta.vercel.app",
+      "https://mkv-e-commerce.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"]
