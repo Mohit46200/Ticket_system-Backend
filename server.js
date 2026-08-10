@@ -15,7 +15,9 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://ticket-system-indol-theta.vercel.app"
-    ]
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"]
   })
 );
 
@@ -38,9 +40,7 @@ mongoose
     console.log("MongoDB connected");
 
     app.listen(PORT, () => {
-      console.log(
-        `Server running on http://localhost:${PORT}`
-      );
+      console.log(`Server running on port ${PORT}`);
     });
   })
   .catch((error) => {
