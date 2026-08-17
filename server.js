@@ -15,7 +15,8 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://ticket-system-indol-theta.vercel.app",
-      "https://mkv-e-commerce.vercel.app"
+      "https://mkv-e-commerce.vercel.app",
+      "https://ecommerce.memohit.space"
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"]
